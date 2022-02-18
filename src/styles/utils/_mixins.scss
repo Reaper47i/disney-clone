@@ -1,0 +1,23 @@
+// All mixins used =>
+
+// for DIVs =>
+
+@mixin container {
+    width: 100%;
+    height:fit-content;
+}
+
+@mixin full-display {
+    width: 100vw;
+    height: 100vh;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin center{
+    align-items: center;
+    justify-content: center;
+}
+

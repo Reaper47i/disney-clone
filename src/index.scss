@@ -1,0 +1,29 @@
+/*
+  all the scss files
+*/
+
+// global used css =>
+@use './styles/utils/global' as *;
+
+// layouts =>
+
+@use './styles/layout/nav';
+
+// pages
+@use './styles/pages/home';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family:$font-main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App{
+  @include container;
+}
