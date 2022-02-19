@@ -1,14 +1,22 @@
-@use '../utils/global' as *;
+@use "../utils/global" as *;
 
-.cr{
-    height: 400px;
-    padding: 20px 35px 0 35px;
-    // overflow: hidden;
-}
-
-.items{
-    min-width: 25rem;
-    min-height: 24rem;
+.cr {
+//   height: 400px;
+  padding: 20px 50px 20px 50px;
+//   margin: 0 50px;
+  overflow: visible;
 }
 
 
+
+// .items {
+  
+
+// //   img{
+// //     position: absolute;
+// //     right: 0;
+// //     top:0;
+// //     bottom:0;
+
+// //   }
+// }
