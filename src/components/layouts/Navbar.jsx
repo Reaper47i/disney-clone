@@ -58,7 +58,6 @@ const Navbar = () => {
       <div className="right">
         <div className="searchBar">
           <input type='text' placeholder="Search"/>
-          <span className="line"></span>
         </div>
         <div className="sub">
           <button>Subscribe</button>

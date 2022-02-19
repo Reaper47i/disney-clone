@@ -7,3 +7,22 @@ $nav-h:10vh;
 
 
 // divs =>
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    height: max-content;
+}

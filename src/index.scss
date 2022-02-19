@@ -8,9 +8,11 @@
 // layouts =>
 
 @use './styles/layout/nav';
+@use './styles/layout/carousel';
 
 // pages
-@use './styles/pages/home';
+
+@use './styles/pages/landingPage';
 
 *{
   margin: 0;
@@ -25,5 +27,13 @@ body {
 }
 
 .App{
-  @include container;
+  width: 100%;
+  height: fit-content;
+}
+
+
+.wrapper{
+  padding-top: $nav-h;
+  width: 100%;
+  background: linear-gradient(180deg,$main-color 25%, $content-color 100%);
 }

@@ -1,0 +1,14 @@
+@use '../utils/global' as *;
+
+.cr{
+    height: 400px;
+    padding: 20px 35px 0 35px;
+    // overflow: hidden;
+}
+
+.items{
+    min-width: 25rem;
+    min-height: 24rem;
+}
+
+

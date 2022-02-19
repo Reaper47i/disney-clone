@@ -5,9 +5,12 @@
     @include flex;
     align-items: center;
     justify-content: space-between;
-    max-height: 12.5vh;
+    height: $nav-h;
     background-color: $main-color;
     color: whitesmoke;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     
     
     > *{
@@ -21,7 +24,10 @@
         margin-left: 1rem;
         justify-content: flex-start;
         padding-left: 50px;
-        
+        .sidebar{
+            position: relative;
+            cursor: pointer;
+        }
         .logo{
           padding: 0.6rem 0.2rem 0.4rem 0.2rem;    
         }
@@ -52,7 +58,7 @@
         }
 
         .searchBar{
-            $src-wd:200px;
+            $src-wd:15vw;
             width: fit-content;
             position: relative;
             @include flex;
@@ -68,35 +74,17 @@
                 outline: none;
                 background-color: transparent;   
                 color: whitesmoke;
+                border-bottom: 1.5px solid whitesmoke;
                 padding-bottom: 6px;
                 transition: ease-in-out, width .35s ease-in-out;
                 
-            }
-
-            
-            .line{
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 1.2px;
-                background-color: hsl(0, 0%, 96%);
-                transition: all 1ms ease-in-out;
-            }
-            
-            
-            :focus{
-                width: calc($src-wd * 2);
-
-                .line{
-                    background-color: $accent-color;
+                &:focus{
+                    width: 30vw;
+                    border-bottom: 2px solid $accent-color;
                 }
             }
+            
         }
-
-
-
-        
 
     }
     
