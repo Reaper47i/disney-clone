@@ -8,6 +8,7 @@ function App() {
       <Navbar/>
       <div className="flex-col center wrapper">
         <LandingPage/>
+        <input type="file" />
       </div>
     </div>
   )
