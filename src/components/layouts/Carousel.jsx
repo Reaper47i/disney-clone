@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 
-import enchanto from '../../../public/images/enchanto.webp'
 
 
 const images = [
@@ -13,47 +12,47 @@ const images = [
         genre:'Superhero',
         year:'2020',
         desc:'',
-        img:'../../../public/images/ShangChi.webp'
+        img:'../../../images/ShangChi.webp'
     },
     {
         id:'2',
         name:'Hawkeye',
-        genre:'Superhero',
-        year:'',
+        genre:'Superhero Marvel Action',
+        year:'2021',
         desc:'',
-        img:'../../../public/images/hawkeye.webp'
+        img:'../../../images/hawkeye.webp'
     },
     {
         id:'3',
         name:'Enchanto',
-        genre:'Fantasy',
-        year:'',
+        genre:'Fantasy Family',
+        year:'2021',
         desc:'',
-        img:'../../../public/images/enchanto.webp'
+        img:'../../../images/enchanto.webp'
     },
     {
         id:'4',
-        name:'',
-        genre:'',
-        year:'',
+        name:'The Book Of Boba Fet',
+        genre:'Sci-Fi',
+        year:'2021',
         desc:'',
-        img:'../../../public/images/bookOfBOBFT.webp'
+        img:'../../../images/bookOfBOBFT.webp'
     },
     {
         id:'5',
-        name:'',
-        genre:'',
-        year:'',
+        name:'Ice Age Adventures Of Buck Wild',
+        genre:'Family',
+        year:'2022',
         desc:'',
-        img:'../../../public/images/hawkeye.webp'
+        img:'../../../images/iceAgeABW.webp'
     },
     {
         id:'6',
-        name:'',
-        genre:'',
-        year:'',
+        name:'Snowdrop',
+        genre:'K-Drama Romance',
+        year:'2022',
         desc:'',
-        img:'../../../public/images/snowdrop.webp'
+        img:'../../../images/snowdrop.webp'
     },
 ];
 
@@ -77,7 +76,7 @@ const Carousel = () => {
                         <div className="items-container">
                             <div className='desc'>
                                 <h1>{item.name}</h1>
-                                <h3>{item.genre}{item.year}</h3>
+                                <h3>{item.genre}<br />{item.year}</h3>
                                 <p>{item.desc}</p>
                             </div>
                             <div className="imgCon">

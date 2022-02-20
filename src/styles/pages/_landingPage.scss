@@ -11,3 +11,21 @@
     border-radius: 8px;
   }
 }
+
+.LpMain {
+  margin: 1rem 0;
+  gap: 1rem;
+
+  h3{
+    font-family: $font-main;
+    color: white;
+    font-weight: 400;
+    padding: 0.5rem 0;
+  }
+
+  .list-items {
+    width: 168px;
+    height: 223px;
+    background-color: whitesmoke;
+  }
+}
