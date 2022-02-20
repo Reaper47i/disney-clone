@@ -1,3 +1,13 @@
-@use '../utils/global' as *;
+@use "../utils/global" as *;
 
+.selector {
+  margin-top: 1rem;
+  gap: 1.5rem;
 
+  .select-bx {
+    flex: 0.17;
+    height: 120px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+  }
+}
