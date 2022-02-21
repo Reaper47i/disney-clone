@@ -23,6 +23,7 @@
     margin-left: 1rem;
     justify-content: flex-start;
     padding-left: 50px;
+    padding-top: 1rem;
     .sidebar {
       position: relative;
       cursor: pointer;
@@ -47,6 +48,7 @@
     justify-content: flex-end;
     gap: 1rem;
     padding-right: 50px;
+    padding-top: 1rem;
 
     > div:not(searchBar) {
       @include flex;
@@ -80,24 +82,27 @@
       }
     }
 
-    button{
-        border: none;
-        cursor: pointer;
-        color: whitesmoke;
-        font-family: $font-main;
-        font-size: 16px;
-        padding:5px 8px;
+    button {
+      border: none;
+      cursor: pointer;
+      color: whitesmoke;
+      font-family: $font-main;
+      font-size: 16px;
+      padding: 5px 8px;
     }
-    .sub button{
-        
-        border-radius: 3px;
-        background-color: $accent-color;
-        
-        
+    .sub button {
+      border-radius: 3px;
+      background-color: $accent-color;
+
+      &:hover {
+        background-color: $accent-light;
+      }
     }
-    .login button{
-        background: transparent;
-        
+    .login button {
+      background: transparent;
+      &:hover {
+        color: $font-hover;
+      }
     }
   }
 }

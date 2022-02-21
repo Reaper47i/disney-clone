@@ -1,12 +1,13 @@
 @use "../utils/global" as *;
 
 .selector {
-  margin-top: 1rem;
+  margin: 0.7rem 0.5rem;
+  padding: 0.5rem 0.5rem; 
   gap: 1.5rem;
+  
 
   .select-bx {
-    flex: 0.17;
-    height: 120px;
+    height: 125px;
     background-color: whitesmoke;
     border-radius: 8px;
   }

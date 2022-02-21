@@ -1,53 +1,80 @@
 @use "../utils/global" as *;
 
 .cr {
-  // height: 400px;
-  padding: 1rem 10px;
+  padding-top: 1rem;
   margin: 0 27px;
   overflow: visible;
-}
+  @media (max-width: 430px) {
+    margin: 0;
+  }
 
-.items {
-  position: relative;
-  min-width: 30rem;
-  height: fit-content;
-  margin: 0 2rem;
+  @media (max-width: 912px) {
+    margin: 0;
+    overflow: hidden;
+  }
 
-  .items-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 1rem;
-    background-color: $items-bg;
-    border-radius: 8px;
-    // box-shadow: ;
-
-    .desc {
-      width: 50ch;
-      height: 100%;
-      align-self: baseline;
-      padding: 2.5rem 5rem;
-      color: whitesmoke;
-      font-family: $font-main;
-      h1,
-      h3,
-      p {
-        font-weight: 400;
-        padding-bottom: 1rem;
-      }
-      h1 {
-        font-size: 35px;
-      }
-    }
-
-    .imgCon {
-      width: 100%;
-      height: 100%;
+  .items {
+    .items-container {
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      img {
-        border-radius: 0px 8px 8px 0;
+      justify-content: space-around;
+      margin: 0 1rem;
+      background-color: $items-bg;
+      border-radius: 8px;
+      // box-shadow: ;
+
+      .desc {
+        width: fit-content;
+        height: 100%;
+        align-self: center;
+        padding: 1rem 4rem;
+        color: whitesmoke;
+        font-family: $font-main;
+        h1,
+        h3,
+        p {
+          font-weight: 400;
+          padding-bottom: 1rem;
+        }
+        h1 {
+          font-size: 40px;
+        }
+        @media (max-width: 1240px) {
+          padding: 1rem 2rem;
+          h1 {
+            font-size: 18px;
+          }
+        }
+      }
+
+      @media (max-width: 1023px) {
+        .desc {
+          display: none;
+        }
+      }
+
+      .imgCon {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        img {
+          border-radius: 0px 8px 8px 0;
+        }
+        @media (max-width: 1023px) {
+          justify-content: center;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        // @media(max-width:425px){
+        //   img{
+        //     width: 100%;
+        //     height: 100%;
+        //   }
+        // }
       }
     }
   }

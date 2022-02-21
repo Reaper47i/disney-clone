@@ -17,6 +17,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -38,3 +39,6 @@ body {
   background: linear-gradient(180deg,$main-color 25%, $content-color 100%);
   padding-bottom: 1rem;
 }
+
+
+

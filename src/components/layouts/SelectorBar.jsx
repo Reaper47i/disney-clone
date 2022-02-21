@@ -2,7 +2,7 @@ import React from "react";
 
 const SelectorBar = () => {
   return (
-    <div className="flex center container selector">
+    <div className="grid selector">
       <div className="select-bx flex center">
         Disney  
       </div>

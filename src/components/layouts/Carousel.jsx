@@ -11,9 +11,43 @@ const settings = {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding:'60px',
-    speed: 600,
+    centerPadding:'40px',
     slidesToShow: 1,
+    speed: 800,
+    responsive:[
+        {
+            breakpoint: 911,
+            settings:{
+                centerMode:true,
+                infinite:true,
+                slidesToShow:1,
+                slidesToScroll:1,
+            }
+        
+        },
+        // {
+        //     breakpoint: 768,
+        //     settings:{
+        //         centerMode:true,
+        //         infinite:true,
+        //         slidesToShow:1,
+        //         slidesToScroll:1,
+        //         infinite:true,
+                
+        //     }
+        
+        // },
+        {
+            breakpoint:430,
+            settings:{
+                centerMode:false,
+                slidesToShow:1,
+                slidesToScroll:1,
+                
+            }
+        }
+
+    ]
 };
 
 const Carousel = () => {
@@ -30,7 +64,7 @@ const Carousel = () => {
                                 <p>{item.desc}</p>
                             </div>
                             <div className="imgCon">
-                                <img src={item.img} alt={item.id} width='720px' height='411px'/>
+                                <img src={item.img} alt={item.id} width='640px' height='360px'/>
                             </div>
                         </div>
                     </div>
