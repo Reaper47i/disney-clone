@@ -64,7 +64,7 @@ const Carousel = () => {
                                 <p>{item.desc}</p>
                             </div>
                             <div className="imgCon">
-                                <img src={item.img} alt={item.id} width='640px' height='360px'/>
+                                <img src={item.img} alt={item.id} width='720px' height='400px'/>
                             </div>
                         </div>
                     </div>

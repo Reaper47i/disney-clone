@@ -1,22 +1,20 @@
 import React from "react";
-
+import {disney,natGeo,marvel,starWars} from '../images';
 const SelectorBar = () => {
   return (
-    <div className="grid selector">
+    <div className="selector">
       <div className="select-bx flex center">
-        Disney  
+        <img src={disney} alt="" />
+      </div>
+      <div className="select-bx flex center">Pixar</div>
+      <div className="select-bx flex center">
+        <img src={marvel} alt=""/>
       </div>
       <div className="select-bx flex center">
-        Pixar
+        {/* <img src={starWars} alt="" width='100%' height='100%'/> */}
       </div>
       <div className="select-bx flex center">
-        Marvel
-      </div>
-      <div className="select-bx flex center">
-        Star Wars
-      </div>
-      <div className="select-bx flex center">
-        Nat Geo
+        <img src={natGeo} alt=""/>
       </div>
     </div>
   );
