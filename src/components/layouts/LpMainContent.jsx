@@ -1,31 +1,39 @@
 import React from "react";
+import {
+  Recomended,
+  NewToDisney,
+  HitMovies,
+  Documentaries,
+  Nature,
+  Action,
+} from "../moviesData/mvIndex";
 
 const LpMainContent = () => {
   return (
     <div className="container flex-col center LpMain">
       <div className="lists container flex-col center">
         <h3>Recomended For You</h3>
-        <div className="list-items flex center">items</div>
+        <Recomended />
       </div>
       <div className="lists container flex-col center">
         <h3>New To Disney+</h3>
-        <div className="list-items flex center">items</div>
+        <NewToDisney />
       </div>
       <div className="lists container flex-col center">
         <h3>Hit Movies</h3>
-        <div className="list-items flex center">items</div>
+        <HitMovies />
       </div>
       <div className="lists container flex-col center">
         <h3>Documentaries</h3>
-        <div className="list-items flex center">items</div>
+        <Documentaries />
       </div>
       <div className="lists container flex-col center">
         <h3>Animals and Nature</h3>
-        <div className="list-items flex center">items</div>
+        <Nature />
       </div>
       <div className="lists container flex-col center">
         <h3>Action Adventure</h3>
-        <div className="list-items flex center">items</div>
+        <Action />
       </div>
     </div>
   );

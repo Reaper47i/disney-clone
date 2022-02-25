@@ -1,0 +1,32 @@
+@use '../utils/global' as *;
+
+
+.slides{
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    // margin: 0 25px;
+    overflow: visible;
+}
+
+.slick-prev{
+    left: 1px;
+}
+
+
+.card{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 10px;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+    
+}
