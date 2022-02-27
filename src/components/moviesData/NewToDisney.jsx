@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { New_URL } from "./moviesData";
+import MovieSlider from "../layouts/MovieSlider";
 
 const NewToDisney = () => {
-  return (
-    <div>NewToDisney</div>
-  )
-}
+  const [newMovies, setNewMovies] = useState([]);
 
-export default NewToDisney
+  const getNewMov = async () => {
+    const { data } = await axios.get(New_URL);
+    setNewMovies(data.results);
+  };
+
+  useEffect(() => {
+    getNewMov();
+  }, []);
+
+  return <MovieSlider type={newMovies} />;
+};
+
+export default NewToDisney;

@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { NATURE_URL } from "./moviesData";
+import MovieSlider from "../layouts/MovieSlider";
 
 const Nature = () => {
-  return (
-    <div>Nature</div>
-  )
-}
+  const [natMovies, setNatMovies] = useState([]);
+  const getNatMovies = async () => {
+    const { data } = await axios.get(NATURE_URL);
+    setNatMovies(data.results);
+  };
+  useEffect(() => {
+    getNatMovies();
+  }, []);
+  return <MovieSlider type={natMovies} />;
+};
 
-export default Nature
+export default Nature;

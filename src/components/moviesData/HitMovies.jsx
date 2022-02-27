@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import MovieSlider from "../layouts/MovieSlider";
+import { HIT_URL } from "./moviesData";
 
 const HitMovies = () => {
-  return (
-    <div>HitMovies</div>
-  )
-}
+  const [hitMovies, setHitMovies] = useState([]);
+  const getHitMov = async () => {
+    const { data } = await axios.get(HIT_URL);
+    setHitMovies(data.results);
+  };
+  useEffect(() => {
+    getHitMov();
+  }, []);
+  return <MovieSlider type={hitMovies} />;
+};
 
-export default HitMovies
+export default HitMovies;

@@ -1,7 +1,7 @@
-import disney from '/images/disneyV.png';
-import natGeo from '/images/natGeo.png';
-import marvel from '/images/Marvel.png';
-import starWars from '/images/starWars.png'
-import Pixar from '/images/pixar 1.png';
+import disney from "/images/disneySVG.svg";
+import natGeo from "/images/NationalGeographic.svg";
+import marvel from "/images/marvel.svg";
+import starWars from "/images/StarWars.svg";
+import Pixar from "/images/pixar.svg";
 
-export {disney, natGeo,marvel,starWars,Pixar};
+export { disney, natGeo, marvel, starWars, Pixar };
