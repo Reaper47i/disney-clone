@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.2",
+    "axios": "^0.26.0",
     "dotenv": "^16.0.0",
     "firebase": "^9.6.7",
     "firebase-tools": "^10.2.1",

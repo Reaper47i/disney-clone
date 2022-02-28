@@ -1,11 +1,18 @@
 import React from "react";
-import { VscThreeBars } from 'react-icons/vsc';
+import { VscThreeBars } from "react-icons/vsc";
 
-const Navbar = () => {
+const Navbar = ({ open, setOpen }) => {
   return (
     <div className="navbar">
       <div className="left">
-        <div className="sidebar"><VscThreeBars style={{ fontSize:'1.7rem', paddingTop:'10px'}}/></div>
+        <div
+          className="sidebar"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          <VscThreeBars style={{ fontSize: "1.7rem", paddingTop: "10px" }} />
+        </div>
         <div className="logo">
           <svg
             viewBox="-5.348741048740129 -20.132333733514315 1053.8905674330858 738.4950747633918"
@@ -53,11 +60,10 @@ const Navbar = () => {
             <li>KIDS</li>
           </ul>
         </div>
-        
       </div>
       <div className="right">
         <div className="searchBar">
-          <input type='text' placeholder="Search"/>
+          <input type="text" placeholder="Search" />
         </div>
         <div className="sub">
           <button>Subscribe</button>

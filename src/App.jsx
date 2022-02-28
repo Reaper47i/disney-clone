@@ -1,16 +1,14 @@
+import { useState } from "react";
 import Navbar from "./components/layouts/Navbar";
+import Sidebar from "./components/layouts/Sidebar";
 import LandingPage from "./components/pages/LandingPage";
 
-
-
-
 function App() {
-  // useEffect(()=>{
-  // 
-  // },[])
+  const [open, setOpen] = useState(false);
   return (
     <div className="App">
-      <Navbar />
+      <Navbar open={open} setOpen={setOpen} />
+      <Sidebar open={open} setOpen={setOpen} />
       <div className="flex-col center wrapper">
         <LandingPage />
       </div>
